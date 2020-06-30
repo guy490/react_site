@@ -1,0 +1,24 @@
+.meta {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    text-align: center;
+    margin: 2% 0;
+    height: 50%;
+    width: 33%
+}
+
+.img {
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    /* for smartphone*/
+    .container {
+        height: 100%;
+        width: 100%
+    }
+}

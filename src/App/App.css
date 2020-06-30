@@ -1,0 +1,39 @@
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.grid_item {
+    text-align: center;
+}
+
+.logo-item {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.about-item {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.teamview-item {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media (max-width: 1024px) {
+    /* for tablet*/
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .teamview-item {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}

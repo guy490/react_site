@@ -1,0 +1,15 @@
+.sub-header {
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.abouttext-container {
+    margin: 4vh 0;
+}
+
+@media (max-width: 1024px) {
+    /* for tablet*/
+    .abouttext-container {
+        margin: 0 4vw;
+    }
+}

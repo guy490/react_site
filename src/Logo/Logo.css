@@ -1,0 +1,13 @@
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    /* for tablet*/
+    .logo {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
