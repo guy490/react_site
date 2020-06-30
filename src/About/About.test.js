@@ -6,7 +6,7 @@ import AboutText from "./AboutText/AboutText";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("<Logo />", () => {
+describe("<About />", () => {
   it("The header 'Execution is everything' is exist", () => {
     const wrapper = shallow(<About />);
     expect(
