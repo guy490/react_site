@@ -21,7 +21,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-install dependencies although I have not installed any outside library expect React
+install dependencies that installed
 
 ### `npm start`
 
