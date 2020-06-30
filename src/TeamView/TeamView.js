@@ -5,14 +5,13 @@ import "./TeamView.css";
 
 const getRandomWorkerList = (workers) => {
   const numberOfWorkers = 6;
-  let tmpWorkers = [...workers];
-  let workerList = [];
+  const workerList = [];
   for (let i = 0; i < numberOfWorkers; i++) {
-    const randomIndex = Math.floor(Math.random() * tmpWorkers.length);
-    const randomWorker = tmpWorkers[randomIndex];
-    tmpWorkers = [
-      ...tmpWorkers.slice(0, randomIndex),
-      ...tmpWorkers.slice(randomIndex + 1, tmpWorkers.length),
+    const randomIndex = Math.floor(Math.random() * workers.length);
+    const randomWorker = workers[randomIndex];
+    workers = [
+      ...workers.slice(0, randomIndex),
+      ...workers.slice(randomIndex + 1, workers.length),
     ];
     workerList.push(randomWorker);
   }
@@ -21,9 +20,9 @@ const getRandomWorkerList = (workers) => {
 
 const TeamView = () => {
   return (
-    <div class="flex-container">
-      {getRandomWorkerList(workers).map((worker, idx) => (
-        <WorkerCard key={idx} worker={worker} />
+    <div className="flex-container">
+      {getRandomWorkerList(workers).map((worker) => (
+        <WorkerCard key={worker.id} worker={worker} />
       ))}
     </div>
   );

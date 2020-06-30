@@ -3,12 +3,9 @@ import AboutText from "./AboutText/AboutText";
 import "./About.css";
 
 const About = () => {
-  const aboutHeader = () => {
-    return <div className="header">Execution is everything</div>;
-  };
   return (
     <div className="content">
-      {aboutHeader()}
+      <h1 className="header">Execution is everything</h1>
       <AboutText header={"WHO ARE WE"}>
         We are a team of creatively diverse, driven, and innovative individuals
         working to acheive the best we can

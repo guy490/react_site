@@ -3,10 +3,12 @@ import "./AboutText.css";
 
 const AboutText = ({ header, children }) => {
   return (
-    <div className="abouttext-container">
-      <div className="sub-header">{header}</div>
-      <div>{children}</div>
-    </div>
+    <section>
+      <div className="abouttext-container">
+        <h3 className="sub-header">{header}</h3>
+        <p>{children}</p>
+      </div>
+    </section>
   );
 };
 
