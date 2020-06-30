@@ -1,6 +1,6 @@
 ## React-Site
 
-This project is build for present a website with responsive view: `PC, Tablet, Smartphones`
+In this project I’m showcasing a responsive website with views for: `PC, Tablet, Smartphones`
 
 ##### PC:
 
